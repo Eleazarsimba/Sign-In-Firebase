@@ -6,8 +6,8 @@ import { getStorage } from "firebase/storage";
 
 //firebase config credentials
 const firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
+    apiKey: "AIzaSyCFdzEnkyLCz1AiP5h5RRnzA1SHe5KAAXY",
+    authDomain: "chatapp1-fcf57.firebaseapp.com",
     projectId: "chatapp1-fcf57",
     storageBucket: "chatapp1-fcf57.appspot.com",
     messagingSenderId: "60804080210",
