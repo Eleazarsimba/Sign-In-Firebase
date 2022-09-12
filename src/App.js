@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
+import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider, signInWithRedirect } from "firebase/auth";
 import { auth } from "./firebase-config"
 import GoogleLogin from 'react-google-button'
 import FacebookLogin from 'react-facebook-login';
@@ -20,7 +20,7 @@ function App() {
 
   const signInWithFacebook = () => {
     const provider = new FacebookAuthProvider();
-    signInWithPopup(auth, provider)
+    signInWithRedirect(auth, provider)
     .then((result) => {
       //Handle Success.
       console.log(result)
